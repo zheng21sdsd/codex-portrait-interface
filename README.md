@@ -4,6 +4,18 @@ An unofficial Codex skill for applying a readable desktop theme or an experiment
 
 > This project is independent of OpenAI and Microsoft. It is not endorsed by either company, does not distribute Codex, and never modifies the Microsoft Store installation.
 
+## Example result
+
+![Sanitized illustrative example of a pastel, image-derived Codex desktop treatment with themed navigation, a readable composer, and continuous panel surfaces.](docs/images/portrait-interface-example.png)
+
+_Sanitized illustrative layout-copy example. It uses non-readable placeholder content and is included to demonstrate the visual treatment only; it is not an official Codex screenshot or product claim._
+
+The example demonstrates the intended composition:
+
+- The supplied image remains visually present in the centre workspace, rather than becoming a full-window wallpaper.
+- Left navigation, file-tree states, composer, right inspector, and bottom panel inherit related light, readable surfaces.
+- Native controls and icons remain native; the skill adjusts scoped colour states instead of replacing interactive UI.
+
 ## What it does
 
 | Mode | Scope | Status |
@@ -25,7 +37,7 @@ Layout-copy keeps native controls and SVGs intact. It only adds a pointer-inert,
 Clone this repository, then copy only the skill payload into your Codex skills directory:
 
 ```powershell
-git clone https://github.com/<owner>/codex-portrait-interface.git
+git clone https://github.com/zheng21sdsd/codex-portrait-interface.git
 Set-Location .\codex-portrait-interface
 .\scripts\install-skill.ps1 -SourcePath .\skills\codex-portrait-interface
 ```
@@ -47,7 +59,7 @@ node scripts\codex-layout-copy.mjs doctor --json
 
 `doctor` is read-only. It checks the Store package, the pinned archive tool, Pillow, platform, and tested compatibility.
 
-## Use it
+## Example workflow
 
 For a supported theme-only change, invoke the skill in Codex and supply a theme JSON. Theme mode does not insert an image.
 
@@ -60,6 +72,13 @@ node scripts\codex-layout-copy.mjs verify --json
 ```
 
 Close ordinary Store Codex before opening **Codex Personal** from the Start menu. The normal Store shortcut always remains unmodified.
+
+| Step | What you should see |
+| --- | --- |
+| `doctor` | A read-only `ready` result with the tested Store version and local dependencies. |
+| `install --dry-run` | A derived, readable image palette without modifying the local app copy. |
+| `install` | A separate **Codex Personal** Start menu entry; the Store installation stays unchanged. |
+| `verify` | Archive, passive-skin, contrast, and isolated renderer checks. Visual approval still belongs to you. |
 
 ## Update and rollback
 
