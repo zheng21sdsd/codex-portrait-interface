@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible non-sensitive problem.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach private images, Codex archives, profiles, manifests, logs, screenshots with conversations, secrets, or absolute local paths. Security reports belong in SECURITY.md.
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - Theme mode
+        - Layout-copy mode (experimental)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Codex Store version
+      placeholder: "26.x.x.x, if applicable"
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Redacted doctor output
+      description: Remove paths and image hashes before pasting.
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true

@@ -1,0 +1,359 @@
+:root {
+  --personal-canvas: #fff8f5;
+  --personal-chrome: #fff0f1;
+  --personal-sidebar: #ffeaed;
+  --personal-surface: rgb(255 253 252 / 0.70);
+  --personal-surface-strong: #fffdfc;
+  --personal-lilac: #f7dfe7;
+  --personal-mint: #f7e8c9;
+  --personal-teal: #a95d77;
+  --personal-teal-hover: #7e4058;
+  --personal-blue: #4e687f;
+  --personal-purple: #a95d77;
+  --personal-pink: #a95d77;
+  --personal-file: #4e687f;
+  --personal-text: #27313f;
+  --personal-muted: #655d67;
+  --personal-line: #edc9d1;
+  --personal-line-strong: #d69cac;
+  --personal-image-scrim: rgb(255 240 242 / 0.92);
+  --personal-image-scrim-middle: rgb(255 255 255 / 0.04);
+  --personal-image-scrim-end: rgb(255 250 249 / 0.92);
+  --personal-image-top-scrim: rgb(255 243 244 / 0.42);
+  --personal-image-bottom-scrim: rgb(255 240 241 / 0.64);
+  --personal-image-opacity: 0.56;
+  --personal-image-saturation: 1.08;
+  --personal-image-contrast: 1.06;
+  --personal-image-brightness: 0.86;
+  --personal-workbench-blush: rgb(226 143 161 / 0.34);
+  --personal-workbench-gold: rgb(222 181 104 / 0.30);
+  --personal-workbench-end: #fff0f1;
+  --personal-sidebar-surface: #fff0f2;
+  --personal-main-surface: rgb(255 248 245 / 0.16);
+  --personal-panel-surface: #fffaf9;
+  --personal-conversation-surface: #fffdfc;
+  --personal-conversation-header: #fff3f4;
+  --personal-reading-surface: #fffdfc;
+  --personal-input-surface: #fffdfc;
+  --personal-secondary-surface: rgb(247 232 201 / 0.72);
+  --personal-hover-surface: #fae8ec;
+  --personal-active-surface: #f4d7df;
+  --personal-disabled-surface: #f7edf0;
+  --personal-disabled-text: #655d67;
+  --personal-on-active-surface: #27313f;
+  --personal-on-accent: #ffffff;
+  --personal-focus-ring: #a95d77;
+  --personal-focus-glow: rgb(226 143 161 / 0.20);
+  --personal-dialog-surface: #fffdfc;
+  --personal-shadow: rgb(39 49 63 / 0.13);
+  --personal-elevation-shadow: rgb(39 49 63 / 0.17);
+  --personal-code-surface: #fffdfc;
+  --personal-terminal-surface: #242735;
+  --personal-terminal-foreground: #fff8f5;
+  --personal-scrollbar: rgb(169 93 119 / 0.44);
+  --personal-scrollbar-hover: rgb(226 143 161 / 0.56);
+  --personal-selection: rgb(226 143 161 / 0.34);
+  --personal-added: #3b8f70;
+  --personal-removed: #a95d77;
+  --personal-sidebar-icon-rest: #4e687f;
+  --personal-sidebar-icon-project: #a37a43;
+  --personal-sidebar-icon-thread: #a95d77;
+  --personal-sidebar-icon-file: #4e687f;
+  --personal-sidebar-icon-hover: #9c4e6a;
+  --personal-sidebar-icon-active: #7e4058;
+  --personal-sidebar-icon-muted: #655d67;
+}
+
+/* __CODEX_IMAGE_THEME_OVERRIDES__ */
+
+html[data-codex-personal-interface] {
+  color-scheme: light;
+  background: var(--personal-canvas);
+  --color-background-surface: var(--personal-surface) !important;
+  --color-background-surface-under: var(--personal-chrome) !important;
+  --color-background-elevated-primary: var(--personal-panel-surface) !important;
+  --color-background-elevated-primary-opaque: var(--personal-surface-strong) !important;
+  --color-background-elevated-secondary: var(--personal-conversation-header) !important;
+  --color-background-elevated-secondary-opaque: var(--personal-chrome) !important;
+  --color-background-control: var(--personal-input-surface) !important;
+  --color-background-control-opaque: var(--personal-surface-strong) !important;
+  --color-background-editor-opaque: var(--personal-surface-strong) !important;
+  --color-background-button-primary: var(--personal-teal) !important;
+  --color-background-button-primary-hover: var(--personal-teal-hover) !important;
+  --color-background-button-primary-active: var(--personal-teal-hover) !important;
+  --color-background-button-secondary: var(--personal-secondary-surface) !important;
+  --color-background-button-secondary-hover: var(--personal-hover-surface) !important;
+  --color-background-button-tertiary-hover: var(--personal-hover-surface) !important;
+  --color-background-accent: var(--personal-teal) !important;
+  --color-background-accent-hover: var(--personal-teal-hover) !important;
+  --color-background-accent-active: var(--personal-teal-hover) !important;
+  --color-border: var(--personal-line) !important;
+  --color-border-light: var(--personal-line) !important;
+  --color-border-heavy: var(--personal-line-strong) !important;
+  --color-border-focus: var(--personal-teal) !important;
+  --color-ring: var(--personal-focus-ring) !important;
+  --color-text: var(--personal-text) !important;
+  --color-text-foreground: var(--personal-text) !important;
+  --color-text-foreground-secondary: var(--personal-muted) !important;
+  --color-text-foreground-tertiary: var(--personal-muted) !important;
+  --color-text-prose: var(--personal-text) !important;
+  --color-text-accent: var(--personal-pink) !important;
+  --color-text-on-accent: var(--personal-on-accent) !important;
+  --color-text-button-primary: var(--personal-on-accent) !important;
+  --color-icon-primary: var(--personal-blue) !important;
+  --color-icon-secondary: var(--personal-muted) !important;
+  --color-icon-tertiary: var(--personal-muted) !important;
+  --color-icon-accent: var(--personal-pink) !important;
+  --color-decoration-added: var(--personal-added) !important;
+  --color-decoration-deleted: var(--personal-removed) !important;
+  --color-editor-added: rgb(59 143 112 / 0.14) !important;
+  --color-editor-deleted: var(--personal-selection) !important;
+  --color-token-bg-primary: var(--personal-main-surface) !important;
+  --color-token-bg-secondary: var(--personal-chrome) !important;
+  --color-token-bg-tertiary: var(--personal-panel-surface) !important;
+  --color-token-side-bar-background: var(--personal-sidebar-surface) !important;
+  --color-token-main-surface-primary: var(--personal-main-surface) !important;
+  --color-token-conversation-body: var(--personal-text) !important;
+  --color-token-conversation-header: var(--personal-text) !important;
+  --color-token-menu-background: var(--personal-dialog-surface) !important;
+  --color-token-menu-border: var(--personal-line-strong) !important;
+  --color-token-dropdown-background: var(--personal-dialog-surface) !important;
+  --color-token-input-background: var(--personal-input-surface) !important;
+  --color-token-input-border: var(--personal-line) !important;
+  --color-token-input-foreground: var(--personal-text) !important;
+  --color-token-input-placeholder-foreground: var(--personal-muted) !important;
+  --color-token-editor-background: var(--personal-code-surface) !important;
+  --color-token-editor-widget-background: var(--personal-panel-surface) !important;
+  --color-token-editor-foreground: var(--personal-text) !important;
+  --color-token-diff-surface: var(--personal-code-surface) !important;
+  --color-token-diff-editor-inserted-line-background: rgb(59 143 112 / 0.12) !important;
+  --color-token-diff-editor-removed-line-background: var(--personal-selection) !important;
+  --color-token-diff-editor-removed-text-background: var(--personal-selection) !important;
+  --color-token-list-hover-background: var(--personal-hover-surface) !important;
+  --color-token-list-active-selection-background: var(--personal-active-surface) !important;
+  --color-token-list-active-selection-foreground: var(--personal-on-active-surface) !important;
+  --color-token-icon-foreground: var(--personal-sidebar-icon-rest) !important;
+  --color-token-list-active-selection-icon-foreground: var(--personal-sidebar-icon-active) !important;
+  --color-token-toolbar-hover-background: var(--personal-hover-surface) !important;
+  --color-token-selection-background: var(--personal-selection) !important;
+  --color-token-focus-border: var(--personal-teal) !important;
+  --color-token-link: var(--personal-blue) !important;
+  --color-token-text-link-foreground: var(--personal-blue) !important;
+  --color-token-text-code-block-background: var(--personal-code-surface) !important;
+  --color-token-text-preformat-background: var(--personal-code-surface) !important;
+  --color-token-terminal-background: var(--personal-terminal-surface) !important;
+  --color-token-terminal-border: var(--personal-line-strong) !important;
+  --color-token-terminal-foreground: var(--personal-terminal-foreground) !important;
+  --vscode-terminal-background: var(--personal-terminal-surface) !important;
+  --vscode-terminal-foreground: var(--personal-terminal-foreground) !important;
+  --color-token-scrollbar-slider-background: var(--personal-scrollbar) !important;
+  --color-token-scrollbar-slider-hover-background: var(--personal-scrollbar-hover) !important;
+  --color-token-progress-bar-background: var(--personal-teal) !important;
+  --codex-diffs-surface: var(--personal-code-surface) !important;
+  --codex-diffs-surface-override: var(--personal-code-surface) !important;
+}
+
+html[data-codex-personal-interface] body {
+  background: transparent !important;
+  color: var(--personal-text);
+}
+
+[data-codex-personal-workbench] {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none !important;
+  user-select: none;
+  background:
+    radial-gradient(circle at 80% 14%, var(--personal-workbench-blush), transparent 31%),
+    radial-gradient(circle at 16% 88%, var(--personal-workbench-gold), transparent 34%),
+    linear-gradient(128deg, var(--personal-canvas), var(--personal-chrome) 52%, var(--personal-workbench-end));
+}
+
+[data-codex-personal-workbench] * {
+  pointer-events: none !important;
+}
+
+.codex-personal-background {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 46%;
+  opacity: var(--personal-image-opacity);
+  filter: saturate(var(--personal-image-saturation)) contrast(var(--personal-image-contrast)) brightness(var(--personal-image-brightness));
+}
+
+[data-codex-personal-workbench]::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, var(--personal-image-scrim) 0%, var(--personal-image-scrim) 16%, var(--personal-image-scrim-middle) 35%, var(--personal-image-scrim-middle) 65%, var(--personal-image-scrim-end) 84%, var(--personal-image-scrim-end) 100%),
+    linear-gradient(180deg, var(--personal-image-top-scrim) 0%, transparent 26%, transparent 67%, var(--personal-image-bottom-scrim) 100%);
+  content: "";
+}
+
+html[data-codex-personal-interface] :is(.app-shell-left-panel, aside[data-testid="app-shell-floating-left-panel"], nav, [role="navigation"], [aria-label*="sidebar" i], [data-testid*="sidebar" i]) {
+  background-color: var(--personal-sidebar-surface) !important;
+  border-color: var(--personal-line) !important;
+  box-shadow: 12px 0 34px var(--personal-shadow);
+}
+
+html[data-codex-personal-interface] :is(main, [role="main"]) {
+  background-color: var(--personal-main-surface) !important;
+  background-image: linear-gradient(90deg, var(--personal-image-scrim) 0%, transparent 22%, transparent 78%, var(--personal-image-scrim-end) 100%) !important;
+}
+
+html[data-codex-personal-interface] :is(aside, [role="complementary"], [data-testid*="right" i], [data-testid*="inspector" i]):not(.app-shell-left-panel):not([data-testid="app-shell-floating-left-panel"]) {
+  background-color: var(--personal-panel-surface) !important;
+  border-color: var(--personal-line) !important;
+  box-shadow: -12px 0 34px var(--personal-shadow);
+}
+
+html[data-codex-personal-interface] :is(textarea, input, [contenteditable="true"], select) {
+  background-color: var(--personal-input-surface) !important;
+  border-color: var(--personal-line) !important;
+  caret-color: var(--personal-teal);
+}
+
+html[data-codex-personal-interface] :is(button, [role="button"], input, textarea, select):is(:disabled, [aria-disabled="true"]) {
+  background-color: var(--personal-disabled-surface) !important;
+  border-color: var(--personal-line) !important;
+  color: var(--personal-disabled-text) !important;
+  opacity: 1 !important;
+}
+
+html[data-codex-personal-interface] :is(textarea, input, [contenteditable="true"], select):focus {
+  border-color: var(--personal-teal) !important;
+  box-shadow: 0 0 0 1px var(--personal-focus-ring), 0 0 24px var(--personal-focus-glow) !important;
+}
+
+html[data-codex-personal-interface] :is([role="dialog"], [role="menu"], [role="listbox"], [data-radix-popper-content-wrapper] > *) {
+  background-color: var(--personal-dialog-surface) !important;
+  border-color: var(--personal-line-strong) !important;
+  box-shadow: 0 22px 64px var(--personal-elevation-shadow), 0 0 26px var(--personal-focus-glow) !important;
+}
+
+html[data-codex-personal-interface] :is(
+  [data-local-conversation-user-anchor],
+  [data-local-conversation-final-assistant],
+  [data-codex-composer-root] .composer-surface-chrome,
+  [data-testid="right-panel-composer-overlay"] [data-right-panel-composer-overlay-content="true"]
+) {
+  background-color: var(--personal-reading-surface) !important;
+  border-color: var(--personal-line) !important;
+}
+
+/* codex-personal-sidebar-icon-skin:start */
+html[data-codex-personal-interface] :is(
+  aside.app-shell-left-panel,
+  aside[data-testid="app-shell-floating-left-panel"]
+) :is(button, [role="button"], a, [role="link"], [role="tab"], [role="treeitem"], [role="listitem"]) svg {
+  color: var(--personal-sidebar-icon-rest) !important;
+}
+
+html[data-codex-personal-interface] :is(
+  aside.app-shell-left-panel,
+  aside[data-testid="app-shell-floating-left-panel"]
+) [data-sidebar-project-drop-zone="project-icon"][data-sidebar-project-kind] svg {
+  color: var(--personal-sidebar-icon-project) !important;
+}
+
+html[data-codex-personal-interface] :is(
+  aside.app-shell-left-panel,
+  aside[data-testid="app-shell-floating-left-panel"]
+) [role="button"]:has([data-thread-title]) svg {
+  color: var(--personal-sidebar-icon-thread) !important;
+}
+
+html[data-codex-personal-interface] :is(
+  aside.app-shell-left-panel,
+  aside[data-testid="app-shell-floating-left-panel"]
+) :is(button, [role="button"], a, [role="link"], [role="tab"], [role="treeitem"], [role="listitem"]):hover:not(:disabled):not([aria-disabled="true"]) svg,
+html[data-codex-personal-interface] :is(
+  aside.app-shell-left-panel,
+  aside[data-testid="app-shell-floating-left-panel"]
+) [data-sidebar-project-drop-zone="project-icon"][data-sidebar-project-kind]:hover svg {
+  color: var(--personal-sidebar-icon-hover) !important;
+}
+
+html[data-codex-personal-interface] :is(
+  aside.app-shell-left-panel,
+  aside[data-testid="app-shell-floating-left-panel"]
+) :is([aria-current="page"], [aria-current="true"], [aria-selected="true"], [data-state="active"], [data-state="selected"], [data-active="true"], [data-selected="true"]) svg {
+  color: var(--personal-sidebar-icon-active) !important;
+}
+
+html[data-codex-personal-interface] :is(
+  aside.app-shell-left-panel,
+  aside[data-testid="app-shell-floating-left-panel"]
+) :is([aria-current="page"], [aria-current="true"], [aria-selected="true"], [data-state="active"], [data-state="selected"], [data-active="true"], [data-selected="true"]) [data-sidebar-project-drop-zone="project-icon"][data-sidebar-project-kind] svg,
+html[data-codex-personal-interface] :is(
+  aside.app-shell-left-panel,
+  aside[data-testid="app-shell-floating-left-panel"]
+) :is([aria-current="page"], [aria-current="true"], [aria-selected="true"], [data-state="active"], [data-state="selected"], [data-active="true"], [data-selected="true"]):is([role="button"]):has([data-thread-title]) svg {
+  color: var(--personal-sidebar-icon-active) !important;
+}
+
+html[data-codex-personal-interface] :is(
+  aside.app-shell-left-panel,
+  aside[data-testid="app-shell-floating-left-panel"]
+) :is(:disabled, [aria-disabled="true"]) svg {
+  color: var(--personal-sidebar-icon-muted) !important;
+}
+/* codex-personal-sidebar-icon-skin:end */
+
+/* codex-personal-file-tree-icon-skin:start */
+html[data-codex-personal-interface] :is(
+  aside.app-shell-left-panel,
+  aside[data-testid="app-shell-floating-left-panel"]
+) file-tree-container {
+  --trees-fg-override: var(--personal-sidebar-icon-file) !important;
+  --trees-fg-muted-override: var(--personal-sidebar-icon-muted) !important;
+  --trees-accent-override: var(--personal-sidebar-icon-active) !important;
+  --trees-selected-fg-override: var(--personal-sidebar-icon-active) !important;
+  --trees-selected-bg-override: var(--personal-active-surface) !important;
+  --trees-file-icon-color: var(--personal-sidebar-icon-file) !important;
+  --trees-file-icon-color-default: var(--personal-sidebar-icon-file) !important;
+}
+/* codex-personal-file-tree-icon-skin:end */
+
+html[data-codex-personal-interface] :is(pre, code, .monaco-editor) {
+  background-color: var(--personal-code-surface) !important;
+  color: var(--personal-text) !important;
+  text-shadow: none;
+}
+
+html[data-codex-personal-interface] [data-app-shell-focus-area="bottom-panel"] {
+  --color-token-main-surface-primary: var(--personal-panel-surface) !important;
+  --color-token-bg-primary: var(--personal-panel-surface) !important;
+  background-color: var(--personal-panel-surface) !important;
+  border-color: var(--personal-line-strong) !important;
+  box-shadow: 0 -12px 32px var(--personal-shadow);
+}
+
+html[data-codex-personal-interface] aside[data-app-shell-focus-area="right-panel"] {
+  --color-token-main-surface-primary: var(--personal-panel-surface) !important;
+  --color-token-bg-primary: var(--personal-panel-surface) !important;
+}
+
+html[data-codex-personal-interface] [data-testid="right-panel-composer-overlay"] [data-right-panel-composer-overlay-content="true"] {
+  --color-token-input-background: var(--personal-input-surface) !important;
+}
+
+html[data-codex-personal-interface] [data-codex-terminal][data-codex-xterm] {
+  --vscode-terminal-background: var(--personal-terminal-surface) !important;
+  --vscode-terminal-foreground: var(--personal-terminal-foreground) !important;
+  --vscode-terminal-selectionBackground: var(--personal-selection) !important;
+  background-color: var(--personal-terminal-surface) !important;
+  color: var(--personal-terminal-foreground) !important;
+}
+
+html[data-codex-personal-interface] ::selection {
+  background: var(--personal-selection);
+  color: var(--personal-text);
+}
+
+html[data-codex-personal-interface] * {
+  scrollbar-color: var(--personal-scrollbar) transparent;
+}

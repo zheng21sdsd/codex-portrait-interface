@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Portrait Interface"
+  short_description: "Apply a readable, continuous image-derived Codex skin."
+  default_prompt: "Use $codex-portrait-interface to apply a safe, readable image-derived Codex skin: show the image in the centre, adapt native side and bottom panels from it, and update sidebar icons plus composer treatment."

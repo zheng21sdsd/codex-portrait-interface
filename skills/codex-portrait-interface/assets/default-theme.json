@@ -1,0 +1,39 @@
+{
+  "appearanceTheme": "system",
+  "lightChromeTheme": {
+    "accent": "#AA6BB5",
+    "contrast": 46,
+    "fonts": {
+      "code": "Cascadia Code",
+      "ui": "Segoe UI Variable"
+    },
+    "ink": "#3A2630",
+    "opaqueWindows": false,
+    "semanticColors": {
+      "diffAdded": "#3F8A63",
+      "diffRemoved": "#C65A67",
+      "skill": "#AA6BB5"
+    },
+    "surface": "#FFF8FC"
+  },
+  "darkChromeTheme": {
+    "accent": "#C8A56B",
+    "contrast": 58,
+    "fonts": {
+      "code": "Cascadia Code",
+      "ui": "Segoe UI Variable"
+    },
+    "ink": "#E8D8BD",
+    "opaqueWindows": false,
+    "semanticColors": {
+      "diffAdded": "#70A887",
+      "diffRemoved": "#B96A72",
+      "skill": "#C8A56B"
+    },
+    "surface": "#131313"
+  },
+  "lightCodeThemeId": "codex",
+  "darkCodeThemeId": "codex",
+  "sansFontSize": 14,
+  "codeFontSize": 12
+}
