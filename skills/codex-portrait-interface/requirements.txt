@@ -1,2 +1,2 @@
 # Pinned for deterministic image validation and metadata-free PNG encoding.
-Pillow==11.0.0
+Pillow==12.3.0
